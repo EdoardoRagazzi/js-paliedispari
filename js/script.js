@@ -52,17 +52,19 @@ function random(min, max) {
 
 
 // Palidroma Chiedere all’utente di inserire una parola. Creare una funzione per capire se la parola inserita è palindroma
-
+// Inserisci una parola
 var parola = prompt('inserisci la parola');
-
+// Parola invertita
 var parolaInversa = invertiParola(parola);
 
+// Condizione per verificare se la parola è palindroma 
 if (parola == parolaInversa) {
     console.log('la parola è palindroma');
 } else {
     console.log('la parola non è palindroma');
 }
 
+// funzione per l'inversione dei caratteri
 function invertiParola(str) {
     var strInversa = str.split('').reverse().join('');
     return strInversa;
